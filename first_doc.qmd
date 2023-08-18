@@ -4,6 +4,10 @@ format: html
 editor: visual
 ---
 
+crossref: fig-title: Figur tbl-title: Tabell fig-prefix: tabell tbl-prefix: tabell
+
+bibliography: my_bib.bib keep-tex: true keep-md: true ---
+
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document.
@@ -29,11 +33,11 @@ The `echo: false` option disables the printing of code (only output is displayed
 
 ```{r}
 #| echo: fenced
-#| label: fig-first_plot
+#| label: fig-firstPlot
 #| fig-cap: "Første plot."
 #| fig-cap-location: margin
 #| 
 plot(cars)
 ```
 
-Mitt første plot er vist i
+Mitt første plot er vist i @fig-firstPlot.
